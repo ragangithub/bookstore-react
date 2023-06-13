@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
+import { addBook, postBooks } from '../redux/books/booksSlice';
 
 const InputBook = () => {
   const [data, setData] = useState({ title: '', author: '' });
@@ -16,11 +16,22 @@ const InputBook = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (data.title.trim() !== '' && data.author.trim() !== '') {
-      dispatch(addBook(data));
-      setData({ title: '', author: '' });
+      const book = {
+        title: data.title,
+        author: data.author,
+        category: 'fiction',
+        item_id: `item${books.length + 1}`,
+      };
+      try {
+        await dispatch(postBooks(book));
+        dispatch(addBook(data));
+        setData({ title: '', author: '' });
+      } catch (error) {
+        error(error);
+      }
     }
   };
   return (
