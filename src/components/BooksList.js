@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import BookItem from './BookItem';
 
 const BooksList = ({ bookProps }) => (
-  <ul className="displayBooks">
+  <ul className="displayedBooks">
     {bookProps.map((book) => (
       <BookItem key={book.item_id} itemProp={book} />
     ))}

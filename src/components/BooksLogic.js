@@ -19,10 +19,10 @@ const BooksLogic = () => {
     return <div className="error">{error.message}</div>;
   }
   return (
-    <>
-      <InputBook />
+    <div className="mainContent">
       <BooksList bookProps={books} />
-    </>
+      <InputBook />
+    </div>
   );
 };
 
