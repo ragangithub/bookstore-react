@@ -18,7 +18,7 @@ const Navbar = () => (
         </ul>
       </div>
       <div className={styles.profile}>
-        <CgProfile />
+        <CgProfile fontSize={35} color="blue" />
       </div>
     </nav>
   </>

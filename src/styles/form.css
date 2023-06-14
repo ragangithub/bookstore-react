@@ -1,9 +1,16 @@
 .form-hr {
   margin: 20px;
+  border: solid 1px #e8e8e8;
 }
 
 h3 {
   text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  color: #888;
 }
 
 .add-book {

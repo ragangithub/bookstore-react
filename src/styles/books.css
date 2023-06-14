@@ -1,5 +1,5 @@
 .mainContent {
-  padding: 1.5rem;
+  padding: 3rem;
 }
 
 .displayedBooks {
@@ -11,6 +11,7 @@
 }
 
 .book-cards {
+  font-family: "RobotoSlab", sans-serif;
   background-color: #fff;
   padding: 0.45rem;
   display: flex;
@@ -26,6 +27,15 @@
   font-size: 0.8rem;
   font-weight: bold;
   color: #121212;
+  opacity: 0.5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
 }
 
 .book-title {
@@ -36,7 +46,7 @@
 }
 
 .author {
-  margin-bottom: 0.5rem;
+  margin-bottom: -1rem;
   font-size: 0.8rem;
   text-transform: capitalize;
   color: #4386bf;
@@ -131,4 +141,21 @@
   border-radius: 3px;
   border: none;
   cursor: pointer;
+}
+.test {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+.completed {
+  opacity: 0.5;
+
+  font-size: 0.875rem;
+}
+.percent {
+  font-size: 2rem;
 }
