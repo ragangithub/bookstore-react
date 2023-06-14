@@ -24,9 +24,6 @@
 .category {
   text-transform: uppercase;
   margin-bottom: 0.5rem;
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: #121212;
   opacity: 0.5;
   font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
@@ -142,6 +139,7 @@
   border: none;
   cursor: pointer;
 }
+
 .test {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
@@ -151,11 +149,12 @@
   letter-spacing: normal;
   color: #121212;
 }
+
 .completed {
   opacity: 0.5;
-
   font-size: 0.875rem;
 }
+
 .percent {
   font-size: 2rem;
 }
